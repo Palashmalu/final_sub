@@ -40,18 +40,18 @@ uvicorn mode_fastapi:app --reload
 
 ## for frontend :
 
-#go the folder:
+# go the folder:
 cd /path/to/trust_wise_project/my-app
 
-#install dependencies
+# install dependencies
 npm install
 
 ## run frontend: npm start
 
 ## for docker :
-#to build
+# to build
 docker compose build
-#to get it up and running 
+# to get it up and running 
 docker compose up
 
 ## Access the application:
