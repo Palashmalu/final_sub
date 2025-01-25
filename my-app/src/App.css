@@ -1,0 +1,144 @@
+
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #eef2f3; /* Soft light gray-blue background */
+}
+
+/* Container styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Full viewport height */
+  padding: 30px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background-color: #ffffff; /* White background for the content */
+  border-radius: 15px; /* Smooth rounded corners */
+  width: 100%; /* Full width of the screen */
+  max-width: none; /* Remove max-width restriction */
+  margin: 0; /* Remove auto margin to avoid centering */
+}
+
+/* Heading styles */
+.heading {
+  font-size: 24px; /* Slightly smaller heading */
+  margin-bottom: 15px; /* Reduced margin */
+  color: #2d6187; /* Calm blue shade */
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Form styles */
+.form {
+  width: 100%; /* Full width of container */
+  max-width: 400px; /* Limit form width for better proportions */
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Reduced gap between form elements */
+}
+
+/* Label styles */
+.label {
+  font-size: 14px; /* Smaller label font */
+  font-weight: bold;
+  color: #444; /* Darker gray for better contrast */
+}
+
+/* Text input and model dropdown styles */
+.textInput, .model {
+  width: 100%; /* Full width within the container */
+  padding: 10px; /* Slightly reduced padding */
+  font-size: 14px; /* Smaller font size */
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Rounded corners */
+  background-color: #f9fbfc; /* Light gray background */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.textInput:focus, .model:focus {
+  border-color: #2d6187; /* Highlight border with blue */
+  outline: none;
+  box-shadow: 0 0 6px rgba(45, 97, 135, 0.3);
+}
+
+/* Button styles */
+.button {
+  padding: 10px 16px; /* Slightly reduced padding */
+  font-size: 14px; /* Smaller font size */
+  color: #ffffff;
+  background-color: #2d6187; /* Calm blue button */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #1e4a66; 
+}
+
+.button:disabled {
+  background-color: #b5c7d3; 
+  cursor: not-allowed;
+}
+
+
+/* Result container */
+.result-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  width: 100%; /* Ensure it takes up the full width */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; /* Center text inside the container */
+}
+
+/* Result text */
+.result {
+  font-size: 16px;
+  color: #333; /* Dark text color */
+}
+
+
+/* .result p {
+  font-size: 14px; 
+  margin: 10px 0;
+} */
+
+
+.loading {
+  font-size: 16px; 
+  color: #555;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.chart-container {
+  height: 400px;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .heading {
+    font-size: 22px; 
+  }
+
+  .form {
+    max-width: 100%; 
+  }
+}
