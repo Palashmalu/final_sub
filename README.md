@@ -49,31 +49,15 @@ npm install
 ## run frontend: npm start
 
 ## for docker :
+#to build
 docker compose build
+#to get it up and running 
 docker compose up
 
 ## Access the application:
 
 Frontend: http://localhost:3000
 Backend API: http://localhost:8000
-
-## project structure
-
-trust_wise_project/
-├── my-app/                  # React frontend
-│   ├── public/              # Static assets
-│   ├── src/                 # React source code
-│   ├── .env                 # Frontend environment variables
-│   ├── package.json         # Frontend dependencies
-│   └── README.md            # Frontend documentation
-├── .env                     # Backend environment variables
-├── mode_fastapi.py          # FastAPI backend
-├── requirements.txt         # Backend dependencies
-├── docker-compose.yml       # Docker Compose configuration
-├── Dockerfile               # Dockerfile for backend
-└── README.md                # Project documentation
-
-
 
 
 
