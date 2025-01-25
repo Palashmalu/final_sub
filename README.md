@@ -32,27 +32,44 @@ TrustWise is a full-stack application that performs text analysis using machine 
 I have already provide the .env files( I know I should'nt , it not safe , but I did'nt have any means to share the mongo_connection url)
 
 ## Install dependencies:
+```bash
 pip install -r requirements.txt
+```
 
 
 ## run backend:
+```bash
 uvicorn mode_fastapi:app --reload
+```
 
-## for frontend :
+# for frontend :
 
-# go the folder:
+## go the folder:
+```bash
 cd /path/to/trust_wise_project/my-app
+```
 
-# install dependencies
+## install dependencies
+
+```bash
 npm install
+```
 
-## run frontend: npm start
+## run frontend:
+```bash
+npm start
+```
 
-## for docker :
-# to build
+# for docker :
+
+## to build
+```bash
 docker compose build
-# to get it up and running 
+```
+## to get it up and running 
+```bash
 docker compose up
+```
 
 ## Access the application:
 
